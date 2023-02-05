@@ -42,7 +42,7 @@ export const NavBar = () => {
                     spacing={6}
                     mr={12}
                 >
-                    <Link href='../lib/Abel_Guardo_CV.pdf' download fontWeight="semibold" color={colorLink} _hover={{ color: `${colorLinkHover}` }}>
+                    <Link href='Abel_Guardo_CV.pdf' download fontWeight="semibold" color={colorLink} _hover={{ color: `${colorLinkHover}` }}>
                         Curriculum
                     </Link>
                     <Link isExternal href="https://www.linkedin.com/in/abelguardop/" fontWeight="semibold" color={colorLink} _hover={{ color: `${colorLinkHover}` }}>
@@ -57,7 +57,7 @@ export const NavBar = () => {
                             <MenuButton as={IconButton} aria-label="Menu" icon={<MenuH />} variant="outline" />
                             <MenuList>
                                 <MenuItem>
-                                    <Link href='../lib/Abel_Guardo_CV.pdf' download>
+                                    <Link href='Abel_Guardo_CV.pdf' download>
                                         Curriculum
                                     </Link>
                                 </MenuItem>
