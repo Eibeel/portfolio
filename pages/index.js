@@ -78,13 +78,13 @@ export default function Home() {
                 title="Nustore"
                 description="Aplicación web ecommerce, permite explorar entre miles de productos, desde su
               búsqueda y el navegar entre sus diferentes categorías."
-                link="https://github.com/Eibeel/nustore"
+                link="https://nustore.vercel.app/"
               />
               <Card
                 title="Journal"
                 description="Journal es organizador de notas personales, junto a su fecha de
               creación y el anexo de imágenes, autenticación y registro de usuarios."
-                link="https://journal-app-with-vite.vercel.app/"
+                link="https://journalnotes.vercel.app/"
               />
               <Card
                 title="Pomodori"
