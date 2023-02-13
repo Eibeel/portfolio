@@ -6,8 +6,8 @@ import { Grid } from "@/components/Grid";
 import { Article } from "@/components/layouts/Article";
 import { LinkStyled } from "@/components/LinkStyled";
 import { Section } from "@/components/Section";
-import Profile from '../public/images/profile.png'
 import { Contacto } from "@/components/Contacto";
+import Profile from '../public/images/profile.png'
 
 export default function Home() {
   return (
@@ -63,15 +63,12 @@ export default function Home() {
           <Box my="1rem">
             <Stack py={1} direction="row" justifyContent="space-between">
               <Text fontWeight="bold" fontSize="xl">
-                Portfolio
+                Proyectos destacados
               </Text>
               <Stack direction="row">
                 <LinkStyled label="GitHub" />
               </Stack>
             </Stack>
-            <Text textAlign="justify">
-              Estos son algunos de mis proyectos.
-            </Text>
 
             <Grid columnBase={1} columnMd={2}>
               <Card
@@ -90,7 +87,7 @@ export default function Home() {
                 title="Pomodori"
                 description="Basada en la Técnica Pomodoro, esta aplicación permite gestionar el tiempo de manera
               óptima entre descansos y tiempos de estudio/trabajo."
-                link="https://eibeel.github.io/pomodori-react-app/"
+                link="https://pomodoritimer.vercel.app/"
               />
               <Card
                 title="Peajes Colombia"
