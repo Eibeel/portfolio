@@ -45,13 +45,13 @@ export default function Home() {
               Da vida a las ideas con código. ⚡
             </Text>
             <Text textAlign="justify" fontWeight={400}>
-              En un principio solía crear diseños para videojuegos independientes.
-              Luego, cuando descubrí mi pasión en el desarrollo web, me di cuenta que encajarían perfectamente.
-              Mi lado creativo en el diseño, y mi lado lógico para codificar.
-              Esto me permite ser minucioso, y que no se pierda ningún detalle en los resultados.
+              Al principio solía crear diseños para videojuegos independientes.
+              Luego, cuando descubrí mi pasión por el desarrollo web, me di cuenta de que ambos mundos encajaban perfectamente.
+              Mi enfoque creativo en el diseño, y mi habilidad lógica para codificar.
+              Esto me permite ser minucioso, asegurándome que ningún detalle se pierda en los resultados.
             </Text>
             <Text textAlign="justify" fontWeight={400} mt="1rem">
-              Soy partidario de las buenas practicas, la programación funcional y el minimalismo.
+              Soy partidario de las buenas prácticas, la programación funcional y el minimalismo.
               Por esto, me mantengo abierto en recibir feedback
               para mejorar la calidad de los resultados,
               y crecer como profesional.
@@ -111,14 +111,14 @@ export default function Home() {
               Me especializo en el desarrollo frontend, estas son algunas de las tecnologías que utilizo frecuentemente...
             </Text>
             <Grid columnBase={2} columnMd={3}>
-              <CardSkill labelColor="orange.700" bgColor="orange.200" label="HTML5" />
-              <CardSkill labelColor="yellow.800" bgColor="yellow.400" label="Javascript" />
+              <CardSkill labelColor="#fff" bgColor="#e85d04" label="HTML5" />
+              <CardSkill labelColor="#000" bgColor="#ffc300" label="Javascript" />
               <CardSkill labelColor="blue.800" bgColor="blue.100" label="React" />
               <CardSkill labelColor="purple.800" bgColor="purple.100" label="Redux" />
               <CardSkill labelColor="gray.100" bgColor="blue.600" label="Typescript" />
               <CardSkill labelColor="yellow.900" bgColor="yellow.400" label="Firebase" />
               <CardSkill labelColor="gray.800" bgColor="gray.300" label="Git - Github" />
-              <CardSkill labelColor="gray.900" bgColor="gray.200" label="Next.js" />
+              <CardSkill labelColor="#fff" bgColor="gray.700" label="Next.js" />
               <CardSkill labelColor="purple.800" bgColor="purple.200" label="Figma" />
             </Grid>
           </Box>
