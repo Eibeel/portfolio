@@ -41,16 +41,18 @@ export default function Home() {
 
         <Section>
           <Box py="2rem">
-            <Text fontWeight="medium" pb="1rem">
+            <Text fontWeight="bold" pb="1rem">
               Da vida a las ideas con código. ⚡
             </Text>
             <Text textAlign="justify" fontWeight={400}>
-              En un principio
-              solía crear pixel art, como un intento de diseñador de videojuegos indie.
+              En un principio solía crear diseños para videojuegos independientes.
               Luego, cuando descubrí mi pasión en el desarrollo web, me di cuenta que encajarían perfectamente.
               Mi lado creativo en el diseño, y mi lado lógico para codificar.
               Esto me permite ser minucioso, y que no se pierda ningún detalle en los resultados.
-              Soy fan del minimalismo, por eso, me mantengo abierto en recibir feedback
+            </Text>
+            <Text textAlign="justify" fontWeight={400} mt="1rem">
+              Soy partidario de las buenas practicas, la programación funcional y el minimalismo.
+              Por esto, me mantengo abierto en recibir feedback
               para mejorar la calidad de los resultados,
               y crecer como profesional.
             </Text>
@@ -106,7 +108,7 @@ export default function Home() {
               Stack tecnológico
             </Text>
             <Text pt={1}>
-              Lenguaje, frameworks, herramientas, entre otros...
+              Me especializo en el desarrollo frontend, estas son algunas de las tecnologías que utilizo frecuentemente...
             </Text>
             <Grid columnBase={2} columnMd={3}>
               <CardSkill labelColor="orange.700" bgColor="orange.200" label="HTML5" />

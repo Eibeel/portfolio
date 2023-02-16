@@ -3,7 +3,7 @@ import { Box, Link, Stack, Text, useColorModeValue } from "@chakra-ui/react"
 export const Card = ({ title, description, link }) => {
     return (
         <Box
-            bg={useColorModeValue('blackAlpha.50', 'whiteAlpha.200')}
+            bg={useColorModeValue('#f7f1e7', 'whiteAlpha.200')}
             p={4}
             borderRadius="2px"
             _hover={{ backgroundColor: "rgba(0, 0, 0, 0.06)" }}
