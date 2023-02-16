@@ -6,8 +6,10 @@ export const Card = ({ title, description, link }) => {
             bg={useColorModeValue('#f7f1e7', 'whiteAlpha.200')}
             p={4}
             borderRadius="2px"
-            _hover={{ backgroundColor: "rgba(0, 0, 0, 0.06)" }}
-            transition="ease-in .2s"
+            _hover={{
+                boxShadow: `${useColorModeValue('#00000026 0px 3px 3px 0px', '#ffffff25 0px 3px 3px 0px')}`
+            }}
+            transition="ease-in-out .2s"
             cursor="pointer"
             as={Link}
             href={link}
