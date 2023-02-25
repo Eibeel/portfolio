@@ -1,29 +1,35 @@
-import { Box, Link, Stack, Text, useColorModeValue } from "@chakra-ui/react"
+import { Box, HStack, Link, Tag, Text } from "@chakra-ui/react"
+import { Code, GitHub } from "iconoir-react"
 
-export const Card = ({ title, description, link }) => {
+export const Card = ({ title, description, link, repo, stack = [] }) => {
     return (
         <Box
-            bg={useColorModeValue('#f7f1e7', 'whiteAlpha.200')}
-            p={4}
-            borderRadius="2px"
-            _hover={{
-                boxShadow: `${useColorModeValue('#00000026 0px 3px 3px 0px', '#ffffff25 0px 3px 3px 0px')}`
-            }}
-            transition="ease-in-out .2s"
-            cursor="pointer"
-            as={Link}
-            href={link}
-            isExternal
-            style={{ textDecoration: "none" }}
+            borderRadius="8px"
+            border="solid .2px #bbbbbb52"
+            p="14px 18px"
+            mt="16px"
         >
-            <Text fontWeight="medium" fontSize="18px" display="flex" justifyContent="space-between" alignItems="center">
-                {title} <sup style={{ color: "#6c757d62" }}>↗</sup>
-            </Text>
-            <Stack mt={6}>
-                <Text>
-                    {description}
+            <HStack justifyContent='space-between'>
+                <Text fontWeight="medium" fontSize="18px" as={Link} href={link} isExternal style={{ textDecoration: "none" }}>
+                    {title}  <sup style={{ color: "#6c757d62" }}>↗</sup>
                 </Text>
-            </Stack>
+                <Link href={repo} isExternal>
+                    <GitHub width='20px' height='20px' color="#989898" />
+                </Link>
+            </HStack>
+            <Text pt="10px">
+                {description}
+            </Text>
+            <HStack pt="18px" wrap="wrap">
+                <Code width='22px' height='22px' color="#219ebc" />
+                {
+                    stack.map(e => (
+                        <Tag key={e} colorScheme="gray" fontSize='12px' variant='outline' border='solid 1px #bbbbbb52' px='16px' boxShadow="none">
+                            {e}
+                        </Tag>
+                    ))
+                }
+            </HStack>
         </Box >
     )
 }

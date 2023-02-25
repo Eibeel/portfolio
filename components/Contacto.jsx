@@ -9,7 +9,7 @@ export const Contacto = () => {
                     ¿Tienes alguna idea en mente?
                 </Text>
             </Box>
-            <Box textAlign="justify">
+            <Box>
                 Puedes contactarme a traves
                 de <Link href='https://www.linkedin.com/in/abelguardop/' isExternal>
                     <Highlight

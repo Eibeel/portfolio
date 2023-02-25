@@ -11,7 +11,7 @@ export const Main = ({ children }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="author" content="Abel Guardo" />
                 <link rel="shortcut icon" href="/favicon.ico" />
-                <title>Home - Abel Guardo</title>
+                <title>Building ideas with code - Abel Guardo</title>
             </Head>
             <NavBar />
             <Container maxW="container.md" pt="6rem">

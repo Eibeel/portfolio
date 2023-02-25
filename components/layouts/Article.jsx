@@ -8,7 +8,8 @@ export const Article = ({ children, title }) => {
 
     return (
         <motion.article
-            style={{ position: 'relative' }}>
+            style={{ position: 'relative' }}
+        >
             <>
                 {
                     title && (

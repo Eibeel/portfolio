@@ -16,9 +16,7 @@ export const NavBar = () => {
             position="fixed"
             zIndex={2}
             w="100%"
-            backdropFilter="blur(10px)"
-            borderBottom=".5px solid"
-            borderBottomColor={useColorModeValue('blackAlpha.50', 'whiteAlpha.50')}
+            backdropFilter="blur(6px)"
         >
             <Container
                 alignItems="center"

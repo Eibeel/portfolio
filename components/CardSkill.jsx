@@ -1,24 +1,23 @@
-import { Code, useColorModeValue } from "@chakra-ui/react"
+import { Flex, useColorModeValue } from "@chakra-ui/react"
+import Image from "next/image"
 
 
-export const CardSkill = ({ label, bgColor, labelColor }) => {
+export const CardSkill = ({ image, label }) => {
 
     return (
-        <Code
-            p=".5rem"
-            textAlign="center"
-            cursor="pointer"
+        <Flex
+            flexDir="column"
+            alignItems="center"
             fontWeight="medium"
             fontSize="15px"
             fontFamily="inherit"
-            bg={useColorModeValue('blackAlpha.50', 'whiteAlpha.200')}
-            _hover={{
-                backgroundColor: `${bgColor}`,
-                color: `${labelColor}`,
-            }}
-            transition="ease-in .2s"
+            bg={useColorModeValue('#eaeaea2c', '#181e289d')}
+            rowGap="12px"
+            borderRadius="6px"
+            p="16px"
         >
+            <Image src={image} alt="tecnologia" style={{ width: "auto", maxHeight: "36px" }} />
             {label}
-        </Code>
+        </Flex>
     )
 }
