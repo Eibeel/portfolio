@@ -7,12 +7,20 @@ import { Article } from "@/components/layouts/Article";
 import { LinkStyled } from "@/components/LinkStyled";
 import { Section } from "@/components/Section";
 import { Contacto } from "@/components/Contacto";
+import JavascriptSVG from '../public/images/javascript.svg'
+import ReactSVG from '../public/images/react.svg'
+import ReduxSVG from '../public/images/redux.svg'
+import NextSVG from '../public/images/nextjs.svg'
+import TsSVG from '../public/images/typescript.svg'
+import NodeSVG from '../public/images/nodejs.svg'
+import FirebaseSVG from '../public/images/firebase.svg'
+import FigmaSVG from '../public/images/figma.svg'
 import Profile from '../public/images/profile.png'
 
 export default function Home() {
   return (
     <Article>
-      <Container>
+      <Container maxW="container.sm">
 
         <Section>
           <Box
@@ -44,13 +52,13 @@ export default function Home() {
             <Text fontWeight="bold" pb="1rem">
               Da vida a las ideas con código. ⚡
             </Text>
-            <Text textAlign="justify" fontWeight={400}>
+            <Text fontWeight={400}>
               Al principio solía crear diseños para videojuegos independientes.
               Luego, cuando descubrí mi pasión por el desarrollo web, me di cuenta de que ambos mundos encajaban perfectamente.
               Mi enfoque creativo en el diseño, y mi habilidad lógica para codificar.
               Esto me permite ser minucioso, asegurándome que ningún detalle se pierda en los resultados.
             </Text>
-            <Text textAlign="justify" fontWeight={400} mt="1rem">
+            <Text fontWeight={400} mt="1rem">
               Soy partidario de las buenas prácticas, la programación funcional y el minimalismo.
               Por esto, me mantengo abierto en recibir feedback
               para mejorar la calidad de los resultados,
@@ -63,40 +71,33 @@ export default function Home() {
 
         <Section>
           <Box my="1rem">
-            <Stack py={1} direction="row" justifyContent="space-between">
-              <Text fontWeight="bold" fontSize="xl">
-                Proyectos destacados
-              </Text>
-              <Stack direction="row">
-                <LinkStyled label="GitHub" />
-              </Stack>
-            </Stack>
+            <Text fontWeight="bold" fontSize="xl" py="8px">
+              Proyectos destacados
+            </Text>
 
-            <Grid columnBase={1} columnMd={2}>
+            <Box>
               <Card
                 title="Nustore"
-                description="Aplicación web ecommerce, permite explorar entre miles de productos, desde su
-              búsqueda y el navegar entre sus diferentes categorías."
+                description="Aplicación web ecommerce, navega y explora miles de productos."
                 link="https://nustore.vercel.app/"
+                stack={['React', 'Redux', 'Firebase', 'Axios', 'Chakra UI']}
+                repo="https://github.com/Eibeel/nustore"
               />
               <Card
                 title="Journal"
-                description="Journal es organizador de notas personales, junto a su fecha de
-              creación y el anexo de imágenes, autenticación y registro de usuarios."
+                description="Organizador de notas personales."
                 link="https://journalnotes.vercel.app/"
+                stack={['React', 'Redux', 'Firebase', 'Material UI']}
+                repo="https://github.com/Eibeel/journal"
               />
               <Card
                 title="Pomodori"
-                description="Basada en la Técnica Pomodoro, esta aplicación permite gestionar el tiempo de manera
-              óptima entre descansos y tiempos de estudio/trabajo."
+                description="Gestiona el tiempo de manera óptima entre descansos y tiempos de estudio/trabajo."
                 link="https://pomodoritimer.vercel.app/"
+                stack={['React', 'Styled Components']}
+                repo="https://github.com/Eibeel/pomodori"
               />
-              <Card
-                title="Peajes Colombia"
-                description="Consulta los diferentes peajes en Colombia por medio de su departamento o municipio."
-                link="https://eibeel.github.io/Peajes-Colombia/"
-              />
-            </Grid>
+            </Box>
           </Box>
         </Section>
 
@@ -107,19 +108,15 @@ export default function Home() {
             <Text fontWeight="bold" fontSize="xl">
               Stack tecnológico
             </Text>
-            <Text pt={1}>
-              Me especializo en el desarrollo frontend, estas son algunas de las tecnologías que utilizo frecuentemente...
-            </Text>
-            <Grid columnBase={2} columnMd={3}>
-              <CardSkill labelColor="#fff" bgColor="#e85d04" label="HTML5" />
-              <CardSkill labelColor="#000" bgColor="#ffc300" label="Javascript" />
-              <CardSkill labelColor="blue.800" bgColor="blue.100" label="React" />
-              <CardSkill labelColor="purple.800" bgColor="purple.100" label="Redux" />
-              <CardSkill labelColor="gray.100" bgColor="blue.600" label="Typescript" />
-              <CardSkill labelColor="yellow.900" bgColor="yellow.400" label="Firebase" />
-              <CardSkill labelColor="gray.800" bgColor="gray.300" label="Git - Github" />
-              <CardSkill labelColor="#fff" bgColor="gray.700" label="Next.js" />
-              <CardSkill labelColor="purple.800" bgColor="purple.200" label="Figma" />
+            <Grid columnBase={2} columnMd={4}>
+              <CardSkill image={JavascriptSVG} label="Javascript" />
+              <CardSkill image={ReactSVG} label="React" />
+              <CardSkill image={ReduxSVG} label="Redux" />
+              <CardSkill image={TsSVG} label="Typescript" />
+              <CardSkill image={FirebaseSVG} label="Firebase" />
+              <CardSkill image={NextSVG} label="Next.js" />
+              <CardSkill image={NodeSVG} label="Nodejs" />
+              <CardSkill image={FigmaSVG} label="Figma" />
             </Grid>
           </Box>
         </Section>
