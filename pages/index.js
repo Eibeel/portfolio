@@ -16,8 +16,9 @@ import NodeSVG from '../public/images/nodejs.svg'
 import FirebaseSVG from '../public/images/firebase.svg'
 import FigmaSVG from '../public/images/figma.svg'
 import Profile from '../public/images/profile.png'
+import { Code, Npm } from "iconoir-react";
 
-export default function Home() {
+export default function Home () {
   return (
     <Article>
       <Container maxW="container.sm">
@@ -82,21 +83,36 @@ export default function Home() {
                 link="https://nustore.vercel.app/"
                 stack={['React', 'Redux', 'Firebase', 'Axios', 'Chakra UI']}
                 repo="https://github.com/Eibeel/nustore"
-              />
+              >
+                <Code width='22px' height='22px' color="#219ebc" />
+              </Card>
               <Card
                 title="Journal"
                 description="Organizador de notas personales."
                 link="https://journalnotes.vercel.app/"
                 stack={['React', 'Redux', 'Firebase', 'Material UI']}
                 repo="https://github.com/Eibeel/journal"
-              />
+              >
+                <Code width='22px' height='22px' color="#219ebc" />
+              </Card>
               <Card
                 title="Pomodori"
                 description="Gestiona el tiempo de manera óptima entre descansos y tiempos de estudio/trabajo."
                 link="https://pomodoritimer.vercel.app/"
                 stack={['React', 'Styled Components']}
                 repo="https://github.com/Eibeel/pomodori"
-              />
+              >
+                <Code width='22px' height='22px' color="#219ebc" />
+              </Card>
+              <Card
+                title="Libma"
+                description="Administra librerías de componentes populares para React de forma fácil y eficiente."
+                link="https://www.npmjs.com/package/libma"
+                stack={['Javascript', 'Node.js']}
+                repo="https://github.com/Eibeel/libma"
+              >
+                <Npm color="#e63946" />
+              </Card>
             </Box>
           </Box>
         </Section>
