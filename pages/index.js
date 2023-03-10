@@ -96,11 +96,11 @@ export default function Home () {
                 <Code width='22px' height='22px' color="#219ebc" />
               </Card>
               <Card
-                title="Pomodori"
-                description="Gestiona el tiempo de manera óptima entre descansos y tiempos de estudio/trabajo."
-                link="https://pomodoritimer.vercel.app/"
-                stack={['React', 'Styled Components']}
-                repo="https://github.com/Eibeel/pomodori"
+                title="Rick and Morty viewer"
+                description="Colección de personajes de la famosa serie Rick And Morty."
+                link="https://rickviewer.vercel.app/"
+                stack={['React', 'Redux', 'Axios', 'Chakra UI', 'Custom Hooks']}
+                repo="https://github.com/Eibeel/viewerRickAndMorty"
               >
                 <Code width='22px' height='22px' color="#219ebc" />
               </Card>
