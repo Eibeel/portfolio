@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { Box, Container, Divider, Stack, Text } from "@chakra-ui/react";
+import { Box, Container, Divider, Text } from "@chakra-ui/react";
 import { Card } from "@/components/Card";
 import { CardSkill } from "@/components/CardSkill";
 import { Grid } from "@/components/Grid";
 import { Article } from "@/components/layouts/Article";
-import { LinkStyled } from "@/components/LinkStyled";
 import { Section } from "@/components/Section";
 import { Contacto } from "@/components/Contacto";
 import JavascriptSVG from '../public/images/javascript.svg'
@@ -16,6 +15,7 @@ import NodeSVG from '../public/images/nodejs.svg'
 import FirebaseSVG from '../public/images/firebase.svg'
 import FigmaSVG from '../public/images/figma.svg'
 import Profile from '../public/images/profile.png'
+import Col from '../public/images/col.svg'
 import { Code, Npm } from "iconoir-react";
 
 export default function Home () {
@@ -38,9 +38,7 @@ export default function Home () {
               <Text fontSize="20px" fontWeight="medium">
                 Frontend Developer
               </Text>
-              <Text>
-                ~ 🇨🇴
-              </Text>
+              <Image src={Col} height={22} width={22} alt='col' />
             </Box>
             <Image src={Profile} alt="Profile" height={144} weight={144} priority="true" style={{ borderRadius: "100%", objectFit: "fill" }} />
           </Box>
