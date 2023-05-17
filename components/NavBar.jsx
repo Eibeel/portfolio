@@ -27,7 +27,7 @@ export const NavBar = () => {
         p={4}
       >
 
-        <Link as={NextLink} href="/">
+        <Link as={NextLink} href="https://github.com/Eibeel" isExternal>
           <Rocket width="2rem" height="2rem" strokeWidth={1} />
         </Link>
 
@@ -42,6 +42,9 @@ export const NavBar = () => {
         >
           <Link href='Abel_Guardo_CV.pdf' download fontWeight="semibold" color={colorLink} _hover={{ color: `${colorLinkHover}` }}>
             Currículum
+          </Link>
+          <Link isExternal href="https://www.behance.net/abelguardop" fontWeight="semibold" color={colorLink} _hover={{ color: `${colorLinkHover}` }}>
+            Behance <sup>↗</sup>
           </Link>
           <Link isExternal href="https://www.linkedin.com/in/abelguardop/" fontWeight="semibold" color={colorLink} _hover={{ color: `${colorLinkHover}` }}>
             Linkedin <sup>↗</sup>

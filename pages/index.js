@@ -1,11 +1,11 @@
-import Image from "next/image";
-import { Box, Container, Divider, Text } from "@chakra-ui/react";
-import { Card } from "@/components/Card";
-import { CardSkill } from "@/components/CardSkill";
-import { Grid } from "@/components/Grid";
-import { Article } from "@/components/layouts/Article";
-import { Section } from "@/components/Section";
-import { Contacto } from "@/components/Contacto";
+import Image from "next/image"
+import { Box, Container, Divider, Text } from "@chakra-ui/react"
+import { Card } from "@/components/Card"
+import { CardSkill } from "@/components/CardSkill"
+import { Grid } from "@/components/Grid"
+import { Article } from "@/components/layouts/Article"
+import { Section } from "@/components/Section"
+import { Contacto } from "@/components/Contacto"
 import JavascriptSVG from '../public/images/javascript.svg'
 import ReactSVG from '../public/images/react.svg'
 import ReduxSVG from '../public/images/redux.svg'
@@ -16,7 +16,7 @@ import FirebaseSVG from '../public/images/firebase.svg'
 import FigmaSVG from '../public/images/figma.svg'
 import Profile from '../public/images/profile.png'
 import Col from '../public/images/col.svg'
-import { Code, Npm } from "iconoir-react";
+import { Code } from "iconoir-react"
 
 export default function Home () {
   return (
@@ -103,13 +103,13 @@ export default function Home () {
                 <Code width='22px' height='22px' color="#219ebc" />
               </Card>
               <Card
-                title="Libma"
-                description="Administra librerías de componentes populares para React de forma fácil y eficiente."
-                link="https://www.npmjs.com/package/libma"
+                title="Todo Task"
+                description="Facilite la organización de sus tareas con Todo Task"
+                link="https://todo4task.vercel.app/"
                 stack={['Javascript', 'Node.js']}
-                repo="https://github.com/Eibeel/libma"
+                repo="https://github.com/Eibeel/todotasks"
               >
-                <Npm color="#e63946" />
+                <Code width='22px' height='22px' color="#219ebc" />
               </Card>
             </Box>
           </Box>
