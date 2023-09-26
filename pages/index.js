@@ -33,7 +33,7 @@ export default function Home () {
           >
             <Box>
               <Text fontSize={{ base: "3xl", md: "32px" }} fontWeight="bold">
-                Hola, Soy Abel Guardo
+                Abel Guardo
               </Text>
               <Text fontSize="20px" fontWeight="medium">
                 Frontend Developer
