@@ -12,7 +12,7 @@ import ReduxSVG from '../public/images/redux.svg'
 import NextSVG from '../public/images/nextjs.svg'
 import TsSVG from '../public/images/typescript.svg'
 import NodeSVG from '../public/images/nodejs.svg'
-import FirebaseSVG from '../public/images/firebase.svg'
+import Tailwind from '../public/images/tailwind.svg'
 import FigmaSVG from '../public/images/figma.svg'
 import Profile from '../public/images/profile.png'
 import Col from '../public/images/col.svg'
@@ -31,7 +31,7 @@ export default function Home () {
             alignItems="center"
             h={{ base: "256px", md: "240px" }}
           >
-            <Box>
+            <Box width={'full'}>
               <Text fontSize={{ base: "3xl", md: "32px" }} fontWeight="bold">
                 Abel Guardo
               </Text>
@@ -127,7 +127,7 @@ export default function Home () {
               <CardSkill image={ReactSVG} label="React" />
               <CardSkill image={ReduxSVG} label="Redux" />
               <CardSkill image={TsSVG} label="Typescript" />
-              <CardSkill image={FirebaseSVG} label="Firebase" />
+              <CardSkill image={Tailwind} label="Tailwind" />
               <CardSkill image={NextSVG} label="Next.js" />
               <CardSkill image={NodeSVG} label="Nodejs" />
               <CardSkill image={FigmaSVG} label="Figma" />
