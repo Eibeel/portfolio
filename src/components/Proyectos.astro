@@ -43,9 +43,11 @@ const PROYECTS = [
 <ul class="grid md:grid-cols-2 gap-4 mt-5">
   {
     PROYECTS.map((proyect) => (
-      <li class="py-2 px-3 border border-gray-200 rounded-md bg-white">
+      <li class="py-2 px-3 border border-gray-200 rounded-md bg-[#fffefc] dark:bg-gray-950 dark:border-gray-900">
         <div class="flex justify-between">
-          <span class="font-semibold text-indigo-700">{proyect.name}</span>
+          <span class="font-semibold text-indigo-700 dark:text-blue-300">
+            {proyect.name}
+          </span>
           <div class="flex gap-3">
             <a href={proyect.url} target="_blank" title="Preview">
               <LinkIcon class="size-4" />

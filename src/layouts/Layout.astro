@@ -1,6 +1,7 @@
 ---
 import "@fontsource-variable/onest";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 ---
 
@@ -17,14 +18,23 @@ import { ViewTransitions } from "astro:transitions";
     <title>Portfolio - Abel Guardo</title>
     <ViewTransitions />
   </head>
-  <body class="relative">
+  <body class="relative text-gray-800 dark:text-gray-200">
     <div
-      class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+      class="absolute inset-0 -z-10 h-full w-full bg-[#fffefc] dark:bg-gray-950"
     >
+      <div
+        class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#111827_1px,transparent_1px)]
+        [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"
+      >
+      </div>
     </div>
     <Header />
     <slot />
+    <Footer />
     <style is:global>
+      :root {
+        color-scheme: light dark;
+      }
       html {
         font-family: "Onest Variable", system-ui, sans-serif;
         scroll-behavior: smooth;
