@@ -1,0 +1,37 @@
+---
+const EXPERIENCE = [
+  {
+    date: "Diciembre 2023 - Abril 2024",
+    title: "Frontend Developer",
+    company: "wyer development center",
+    description: `Implementé características esenciales para una plataforma de ámbito KYC/AML, integrando microapps y microservicios junto a un amplio equipo bajo la metodología SCRUM.`,
+  },
+  {
+    date: "Junio 2023 - Abril 2024",
+    title: "Frontend Developer",
+    company: "KRU360",
+    description: `Participé en el desarrollo de e-commerces y módulos administrativos.
+    Optimicé aplicaciones web disminuyendo sus tiempos de carga, mejorando la accesibilidad e implementando SEO on Page enfocado al marketing digital.`,
+  },
+];
+---
+
+<ol class="relative border-s border-indigo-200 mt-5">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4 grid md:grid-cols-5">
+        <span class="absolute w-2 h-2 bg-indigo-200 rounded-full mt-2.5 -start-1" />
+        <div class="md:col-span-2">
+          <h3 class="text-lg font-bold text-indigo-700">
+            {experience.title}
+          </h3>
+          <h3 class="text-lg text-gray-800 font-semibold">{experience.company}</h3>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-600">
+            {experience.date}
+          </time>
+        </div>
+        <p class="text-gray-600 md:col-span-3">{experience.description}</p>
+      </li>
+    ))
+  }
+</ol>

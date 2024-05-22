@@ -1,0 +1,43 @@
+---
+const links = [
+  {
+    title: "Experiencia",
+    label: "experiencia",
+    url: "/#experiencia",
+  },
+  {
+    title: "Proyectos",
+    label: "proyectos",
+    url: "/#proyectos",
+  },
+  {
+    title: "Sobre mí",
+    label: "sobre-mi",
+    url: "/#sobre-mi",
+  },
+  {
+    title: "Linkedin",
+    label: "linkedin",
+    url: "https://www.linkedin.com/in/abelguardop/",
+  },
+];
+---
+
+<header class="fixed top-0 w-full h-auto z-10">
+  <nav
+    class="h-12 px-8 m-auto flex justify-center items-center gap-x-5 bg-[#ffffff40] backdrop-blur-sm rounded-full"
+  >
+    {
+      links.map((link) => (
+        <a
+          class="text-gray-600 hover:text-indigo-700 font-medium transition text-[15px]"
+          aria-label={link.label}
+          href={link.url}
+          target={link.label === "linkedin" ? "_blank" : ""}
+        >
+          {link.title}
+        </a>
+      ))
+    }
+  </nav>
+</header>

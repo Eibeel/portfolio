@@ -1,0 +1,17 @@
+---
+interface Props {
+  stack: string[];
+}
+
+const { stack } = Astro.props;
+---
+
+<ul class="flex gap-2 mt-2">
+  {
+    stack.map((tech) => (
+      <li class="text-xs text-gray-700 border border-gray-300 px-2 py-0.5 rounded-md">
+        {tech}
+      </li>
+    ))
+  }
+</ul>

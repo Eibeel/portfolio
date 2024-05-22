@@ -1,0 +1,63 @@
+---
+import Stack from "./Stack.astro";
+import GithubIcon from "./icons/GithubIcon.astro";
+import LinkIcon from "./icons/LinkIcon.astro";
+
+const PROYECTS = [
+  {
+    name: "Nustore",
+    label: "nustore",
+    description:
+      "Aplicación web ecommerce, navega y explora miles de productos.",
+    url: "https://nustore.vercel.app/",
+    stack: ["React", "Redux", "Firebase", "Axios", "Chakra UI"],
+    repo: "https://github.com/Eibeel/nustore",
+  },
+  {
+    name: "Rick and Morty viewer",
+    label: "rick-and-morty-viewer",
+    description: "Colección de personajes de la famosa serie Rick And Morty.",
+    url: "https://rickviewer.vercel.app/",
+    stack: ["React", "Redux", "Firebase", "Chakra UI"],
+    repo: "https://github.com/Eibeel/viewerRickAndMorty",
+  },
+  {
+    name: "Journal",
+    label: "journal",
+    description: "Organizador de notas personales.",
+    url: "https://journalnotes.vercel.app/",
+    stack: ["React", "Redux", "Firebase", "Material UI"],
+    repo: "https://github.com/Eibeel/journal",
+  },
+  {
+    name: "Todo Task",
+    label: "todo-task",
+    description: "Facilite la organización de sus tareas con Todo Task.",
+    url: "https://todo4task.vercel.app/",
+    stack: ["React"],
+    repo: "https://github.com/Eibeel/todotasks",
+  },
+];
+---
+
+<ul class="grid md:grid-cols-2 gap-4 mt-5">
+  {
+    PROYECTS.map((proyect) => (
+      <li class="py-2 px-3 border border-gray-200 rounded-md bg-white">
+        <div class="flex justify-between">
+          <span class="font-semibold text-indigo-700">{proyect.name}</span>
+          <div class="flex gap-3">
+            <a href={proyect.url} target="_blank" title="Preview">
+              <LinkIcon class="size-4" />
+            </a>
+            <a href={proyect.repo} target="_blank" title="Code">
+              <GithubIcon class="size-4" />
+            </a>
+          </div>
+        </div>
+        <p class="mt-1 text-sm">{proyect.description}</p>
+        <Stack stack={proyect.stack} />
+      </li>
+    ))
+  }
+</ul>

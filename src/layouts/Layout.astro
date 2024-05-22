@@ -1,0 +1,38 @@
+---
+import "@fontsource-variable/onest";
+import Header from "../components/Header.astro";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portfolio de Abel Guardo - Frontend Developer especializado en React"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Portfolio - Abel Guardo</title>
+    <ViewTransitions />
+  </head>
+  <body class="relative">
+    <div
+      class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+    >
+    </div>
+    <Header />
+    <slot />
+    <style is:global>
+      html {
+        font-family: "Onest Variable", system-ui, sans-serif;
+        scroll-behavior: smooth;
+        background: #fffefc;
+      }
+      body {
+        min-height: 100vh;
+      }
+    </style>
+  </body>
+</html>

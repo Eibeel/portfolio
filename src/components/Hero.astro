@@ -1,0 +1,37 @@
+---
+import Badge from "./Badge.astro";
+import SocialPill from "./SocialPill.astro";
+import Mail from "./icons/Mail.astro";
+import Linkedin from "./icons/Linkedin.astro";
+const altImage = "Abel Guardo";
+---
+
+<div class="flex flex-col justify-center gap-y-4 mb-4">
+  <img class="rounded-full shadow-lg size-24" src="/me.webp" alt={altImage} />
+</div>
+<div>
+  <div class="flex items-center gap-3">
+    <h1 class="text-4xl font-bold tracking-tight text-gray-800">Abel Guardo</h1>
+    <a
+      class="w-fit"
+      href="https://www.linkedin.com/in/abelguardop"
+      target="_blank"
+    >
+      <Badge>Disponible</Badge>
+    </a>
+  </div>
+
+  <p class="text-xl [&>strong]:text-indigo-700">
+    <strong>Desarrollador Frontend</strong> de Colombia 🇨🇴.
+  </p>
+</div>
+<div class="flex flex-wrap gap-5 mt-2">
+  <SocialPill href="mailto:abelguardo.dev@gmail.com">
+    <Mail />
+    Mail
+  </SocialPill>
+  <SocialPill href="https://www.linkedin.com/in/abelguardop" target="_blank">
+    <Linkedin />
+    Linkedin
+  </SocialPill>
+</div>
