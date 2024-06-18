@@ -1,56 +1,54 @@
 ---
 import Hero from "@/components/Hero.astro";
 import SectionContainter from "@/components/SectionContainter.astro";
-import Briefcase from "@/components/icons/Briefcase.astro";
-import CodeIcon from "@/components/icons/CodeIcon.astro";
-import UserIcon from "@/components/icons/UserIcon.astro";
+import Briefcase from "@/assets/icons/Briefcase.astro";
+import CodeIcon from "@/assets/icons/CodeIcon.astro";
+import UserIcon from "@/assets/icons/UserIcon.astro";
 import Layout from "@/layouts/Layout.astro";
 import Timeline from "@/components/Timeline.astro";
 import Proyectos from "@/components/Proyectos.astro";
-import AboutMe from "@/components/AboutMe.astro"
-import Tech from '@/components/Tech.astro'
-import ToolsIcon from '@/components/icons/ToolsIcon.astro'
+import AboutMe from "@/components/AboutMe.astro";
+import Tech from "@/components/Tech.astro";
+import ToolsIcon from "@/assets/icons/ToolsIcon.astro";
 ---
 
 <Layout>
   <main class="px-4">
     <SectionContainter class="py-24 md:py-32">
-      <Hero>
-      </slot>
-    </Hero>
+      <Hero />
     </SectionContainter>
-    <div class="space-y-24">
-      <SectionContainter id="experiencia">
-        <h2 class="flex items-center font-semibold gap-x-3 text-xl">
-          <Briefcase class="size-6" />
-          Experiencia Laboral
-        </h2>
-        <Timeline />
-      </SectionContainter>
-      
-      <SectionContainter id="proyectos">
-        <h2 class="flex items-center font-semibold gap-x-3 text-xl">
-          <CodeIcon class="size-6" />
-          Proyectos
-        </h2>
-        <Proyectos />
-      </SectionContainter>
-
-      <SectionContainter>
-        <h2 class="flex items-center font-semibold gap-x-3 text-xl">
-          <ToolsIcon class="size-6" />
-          Herramientas y Tecnologias
-        </h2>
-        <Tech />
-      </SectionContainter>
-
-      <SectionContainter id="sobre-mi">
-        <h2 class="flex items-center font-semibold gap-x-3 text-xl mb-5">
-          <UserIcon class="size-6" />
-          Sobre mí
-        </h2>
-        <AboutMe />
-      </SectionContainter>
-    </div>
   </main>
+  <div class="space-y-24">
+    <SectionContainter id="experiencia">
+      <h2 class="flex items-center font-semibold gap-x-3 text-xl">
+        <Briefcase class="size-6" />
+        Experiencia Laboral
+      </h2>
+      <Timeline />
+    </SectionContainter>
+
+    <SectionContainter id="proyectos">
+      <h2 class="flex items-center font-semibold gap-x-3 text-xl">
+        <CodeIcon class="size-6" />
+        Proyectos
+      </h2>
+      <Proyectos />
+    </SectionContainter>
+
+    <SectionContainter>
+      <h2 class="flex items-center font-semibold gap-x-3 text-xl">
+        <ToolsIcon class="size-6" />
+        Herramientas y Tecnologias
+      </h2>
+      <Tech />
+    </SectionContainter>
+
+    <SectionContainter id="sobre-mi">
+      <h2 class="flex items-center font-semibold gap-x-3 text-xl mb-5">
+        <UserIcon class="size-6" />
+        Sobre mí
+      </h2>
+      <AboutMe />
+    </SectionContainter>
+  </div>
 </Layout>

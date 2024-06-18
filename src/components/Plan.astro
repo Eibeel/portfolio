@@ -1,0 +1,64 @@
+---
+interface Props {
+  label: string;
+  title: string;
+  description: string;
+  tools?: {
+    icon: (_props: Record<string, undefined>) => undefined;
+    name: string;
+  }[];
+  features: string[];
+  message: string;
+}
+
+const { label, description, features, message, title, tools } = Astro.props;
+---
+
+<div
+  class="bg-amber-transparent dark:bg-gray-950 border border-gray-200 dark:border-gray-900 flex flex-col justify-between rounded h-full p-8"
+>
+  <div>
+    <div class="flex flex-col gap-2">
+      <div class="flex justify-between items-center">
+        <span class="text-lg font-semibold text-indigo-700 dark:text-blue-300">
+          {title}
+        </span>
+        <div class="flex items-center gap-2">
+          {tools?.map((tool) => <tool.icon />)}
+        </div>
+      </div>
+      <p class="text-sm">
+        {description}
+      </p>
+    </div>
+    <div class="mt-4">
+      <span class="text-sm">
+        {
+          label === "development"
+            ? "Características:"
+            : "Todo lo que incluye Solo Desarrollo, más:"
+        }
+      </span>
+      <ul class="flex flex-col mt-2 text-sm gap-y-2" role="list">
+        {
+          features.map((feature) => (
+            <li class="list-disc list-inside">
+              <span>{feature}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+  <div class="mt-8">
+    <a
+      class="w-fit px-4 py-2 font-medium text-sm flex items-center gap-2 rounded-md bg-amber-transparent dark:bg-gray-950 border border-gray-200 dark:border-gray-900
+        dark:hover:bg-gray-900/60 hover:scale-[1.04] transition-all"
+      href={message}
+      target="_blank"
+      rel="noreferrer"
+    >
+      Contactar<span>→</span>
+    </a>
+  </div>
+</div>

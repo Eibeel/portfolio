@@ -1,7 +1,7 @@
 ---
-import SunIcon from "./icons/Sun.astro";
-import MoonIcon from "./icons/Moon.astro";
-import SystemIcon from "./icons/System.astro";
+import SunIcon from "@/assets/icons/Sun.astro";
+import MoonIcon from "@/assets/icons/Moon.astro";
+import SystemIcon from "@/assets/icons/System.astro";
 
 const THEMES = ["Light", "Dark", "System"];
 ---
@@ -24,7 +24,7 @@ const THEMES = ["Light", "Dark", "System"];
   </button>
   <div
     id="themes-menu"
-    class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-[#fffefc] dark:bg-gray-900/90 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
+    class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-amber-transparent dark:bg-gray-900/90 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
   >
     <ul>
       {

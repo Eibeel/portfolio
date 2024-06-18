@@ -1,0 +1,32 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import SectionContainter from "@/components/SectionContainter.astro";
+import Plans from "@/components/Plans.astro";
+import ComponentIcon from "@/assets/icons/ComponentIcon.astro";
+---
+
+<Layout>
+  <main class="px-4">
+    <SectionContainter class="pt-24 pb-8 md:pt-32 md:pb-12">
+      <h2 class="flex items-center font-semibold gap-x-3 text-xl">
+        <ComponentIcon />
+        Desarrollo y diseño web
+      </h2>
+      <div class="flex flex-col gap-2 mt-5 [&>p]:text-pretty">
+        <p>
+          Páginas web centradas en la experiencia de usuario, usabilidad y
+          accesibilidad. Combinadas con un diseño atractivo, y un desarrollo web
+          óptimo.
+        </p>
+        <p>
+          Este enfoque garantiza un excelente rendimiento a través de la
+          optimización de recursos, asegurando una experiencia fluida y efectiva
+          para todos los usuarios.
+        </p>
+      </div>
+    </SectionContainter>
+    <SectionContainter>
+      <Plans />
+    </SectionContainter>
+  </main>
+</Layout>

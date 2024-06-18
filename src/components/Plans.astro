@@ -1,0 +1,70 @@
+---
+import Plan from "./Plan.astro";
+import AstroIcon from "@/assets/icons/AstroIcon.astro";
+import TailwindIcon from "@/assets/icons/TailwindIcon.astro";
+import FigmaIcon from "@/assets/icons/FigmaIcon.astro";
+
+const CONTENT = [
+  {
+    label: "design-and-development",
+    title: "Diseño + Desarrollo",
+    description:
+      "Ideal para startups, microempresas o para todos los que requieran de una landing page.",
+    tools: [
+      {
+        icon: AstroIcon,
+        name: "Astro",
+      },
+      {
+        icon: TailwindIcon,
+        name: "Tailwind",
+      },
+      {
+        icon: FigmaIcon,
+        name: "Figma",
+      },
+    ],
+    features: ["Diseño en Figma (paleta de colores, tipografía, etc.)"],
+    message:
+      "https://wa.me/573022017254?text=Hola,%20estoy%20interesado%20en%20el%20diseño%20y%20desarrollo%20de%20una%20landing%20page.",
+  },
+  {
+    label: "development",
+    title: "Solo Desarrollo",
+    description: "Ideal si ya tienes un diseño o una plantilla.",
+    tools: [
+      {
+        icon: AstroIcon,
+        name: "Astro",
+      },
+      {
+        icon: TailwindIcon,
+        name: "Tailwind",
+      },
+    ],
+    features: [
+      "Astro.js y Tailwind CSS",
+      "Código limpio y accesible",
+      "Optimizado para SEO",
+      "Soporte y mantenimiento",
+    ],
+    message:
+      "https://wa.me/573022017254?text=Hola,%20estoy%20interesado%20en%20el%20desarrollo%20de%20una%20landing%20page.",
+  },
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  {
+    CONTENT.map((content) => (
+      <Plan
+        label={content.label}
+        description={content.description}
+        features={content.features}
+        message={content.message}
+        title={content.title}
+        tools={content.tools}
+      />
+    ))
+  }
+</div>
